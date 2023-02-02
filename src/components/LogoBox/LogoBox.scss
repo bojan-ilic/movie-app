@@ -1,0 +1,25 @@
+.header {
+  .logo-box {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    a {
+      display: flex;
+      img {
+        max-width: 11.2rem;
+      }
+    }
+  }
+}
+
+.footer {
+  .logo-box {
+    a {
+      display: flex;
+      img {
+        width: 107px;
+        height: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.movie-promo-list {
+  .movie-promo-card {
+    .promo-image {
+      background-image: linear-gradient(
+          270deg,
+          rgba(37, 46, 57, 0),
+          rgb(37, 46, 57) 80%
+        ),
+        url(https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/22146c4a171d25b061f78e54fce25329e56413e6c96207482312fb6caa2bfbd6._RI_V_TTW_SX1500_BL40_FMJPG_.jpg);
+      background-size: cover;
+      border-radius: 1.6rem 0 0 1.6rem;
+      max-width: 46rem;
+      padding: 2.4rem;
+      min-width: 20rem;
+      a {
+        h3 {
+        }
+      }
+      .info-container {
+      }
+    }
+    .promo-video {
+    }
+  }
+}

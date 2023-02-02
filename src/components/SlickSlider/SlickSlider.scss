@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.slick-slider-wrapper {
+  margin-bottom: 50px;
+  svg {
+    color: $color-primary-dark;
+    z-index: 8888;
+    width: 4rem;
+    height: 4rem;
+    &.slick-prev {
+      left: 2.5rem;
+    }
+    &.slick-next {
+      z-index: 8888;
+      right: 2.5rem;
+      color: $color-primary-dark;
+    }
+  }
+  .slick-slide-one {
+    background-color: #0f171e;
+    line-height: 0;
+    a {
+      img {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1600px;
+      }
+    }
+  }
+  ul {
+    &.slick-dots {
+      bottom: 20px;
+      li {
+        button {
+          &::before {
+            color: hsla(0, 0%, 100%, 0.3);
+            opacity: unset;
+            font-size: 13px;
+          }
+        }
+        &.slick-active {
+          button {
+            &::before {
+              color: hsla(0, 0%, 100%, 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}

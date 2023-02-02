@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.header {
+  &__search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form {
+      color: #555;
+      display: flex;
+      padding: 2px;
+      border: 1px solid grey;
+      input[type="search"] {
+        width: 22rem;
+        color: $color-tertiary;
+        font-size: 1.7rem;
+        padding: 6px;
+        border: 1px solid transparent;
+        background-color: transparent;
+        &:focus {
+          border-color: transparent;
+          outline: none;
+        }
+        &::placeholder {
+          color: #bbb;
+        }
+        @media screen and (max-width: 600px) {
+        }
+      }
+      button[type="submit"] {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0.1rem 0 0.1rem 0.5rem;
+        cursor: pointer;
+        background-color: transparent;
+        width: 3rem;
+        border: 1px solid transparent;
+        color: #ffffff;
+        &:focus {
+          box-shadow: 0 0 3px 0 #1183d6;
+          border-color: #1183d6;
+          outline: none;
+        }
+        .fa-search {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

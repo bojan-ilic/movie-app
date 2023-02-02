@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.movie-card {
+  max-width: 29.4rem;
+  a {
+    p {
+      color: $color-primary;
+      display: inline-block;
+    }
+  }
+}

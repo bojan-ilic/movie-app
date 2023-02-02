@@ -1,0 +1,32 @@
+// Colors
+$color-primary: #ffffff; // white
+$color-primary-dark: rgba(242, 244, 246, 0.9); // light gray
+$color-secondary: #79b8f3; // light blue
+$color-secondary-light: #90dffe; // light blue
+$color-tertiary: #8197a4; // dark gray
+
+// Font Variables
+@font-face {
+  font-family: AmazonEmber;
+  src: url(../assets/fonts/Amazon-Ember-Medium.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+$font-primary: "AmazonEmber", "PT Sans", Arial, sans-serif; // Google Font
+
+// Portrait phones
+$breakpoint-x-small: 360px;
+
+// Landscape phones
+$breakpoint-small: 480px;
+
+// Tablets
+$breakpoint-medium: 768px;
+
+// Desktops
+$breakpoint-large: 992px;
+
+// Large desktops
+$breakpoint-x-large: 1200px;
+
+// Larger desktops
+$breakpoint-xx-large: 1400px;
