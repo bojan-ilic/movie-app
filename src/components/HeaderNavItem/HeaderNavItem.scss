@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.header {
+  &__nav-bar {
+    ul {
+      li {
+        &.active-menu-link {
+          border-bottom: 0.1rem solid $color-primary;
+          a {
+            color: $color-primary;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

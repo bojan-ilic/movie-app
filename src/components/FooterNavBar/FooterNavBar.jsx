@@ -2,6 +2,12 @@ import React from "react";
 import "./FooterNavBar.scss";
 import { Link } from "react-router-dom";
 
+/**
+ * FooterNavBar component renders the navigation bar in the footer of the website.
+ *
+ * @component
+ */
+
 class FooterNavBar extends React.Component {
   render() {
     return (
