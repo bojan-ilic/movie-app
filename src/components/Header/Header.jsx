@@ -13,8 +13,6 @@ import Account from "../Account/Account";
  * - HeaderNavBar
  * - SearchBar
  * - Account
- *
- * @component
  */
 
 class Header extends React.Component {

@@ -33,7 +33,7 @@ class MovieList extends React.Component {
 
   movieCategory = (apiVariable) => {
     const category = this.props.category;
-    console.log("Kategorije: ", category);
+    // console.log("Kategorije: ", category);
     return `https://api.themoviedb.org/3/${category}?api_key=ed629fe234107c7bb508e5eec8974967`;
   };
 
@@ -55,7 +55,7 @@ class MovieList extends React.Component {
   render() {
     const title = this.props.title;
     const movieDetails = this.state.movieDetails;
-    console.log("movieDetails: ", movieDetails);
+    // console.log("movieDetails: ", movieDetails);
     const posterURL = (poster) => {
       return `https://www.themoviedb.org/t/p/w500${poster}`;
     };
@@ -68,7 +68,7 @@ class MovieList extends React.Component {
     // console.log(typeof movieDetailsComplete);
 
     const settings = {
-      dots: true,
+      // dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 6,

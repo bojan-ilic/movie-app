@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* SEARCH - BEGIN */
+    position: relative;
+    /* SEARCH - END */
     form {
       color: #555;
       display: flex;
@@ -27,7 +30,7 @@
         @media screen and (max-width: 600px) {
         }
       }
-      button[type="submit"] {
+      span {
         display: flex;
         align-items: center;
         justify-content: left;
@@ -47,5 +50,28 @@
         }
       }
     }
+    /* SEARCH - BEGIN */
+    ul {
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      li {
+        display: flex;
+        padding: 1.4rem 2.4rem;
+        background-color: #252e39;
+        line-height: 2rem;
+        border-bottom: 0.1rem solid #323e4c;
+        transition: all 0.2s ease-out;
+        &:hover {
+          background-color: #566b84;
+        }
+        a {
+          display: flex;
+          flex-direction: column;
+          color: rgba(242, 244, 246, 0.9);
+        }
+      }
+    }
+    /* SEARCH - END */
   }
 }

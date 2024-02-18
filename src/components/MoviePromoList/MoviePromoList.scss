@@ -1,1 +1,36 @@
 @import "../../styles/variables.scss";
+
+.movie-promo-list {
+  margin-bottom: 2.8rem;
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    .title-logo {
+      display: flex;
+      margin-right: 0.8rem;
+      img {
+        height: 2.4rem;
+      }
+    }
+    .title-text {
+      h2 {
+        color: $color-primary;
+        font-size: 1.9rem;
+      }
+    }
+  }
+  .slick-slider {
+    button {
+      &.slick-arrow {
+        visibility: hidden;
+      }
+    }
+    ul {
+      &.slick-dots {
+        visibility: hidden;
+      }
+    }
+  }
+}

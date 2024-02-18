@@ -9,6 +9,11 @@
       padding: 0;
       li {
         padding: 0.5rem 1.5rem;
+        // transition: width 2s, height 2s, transform 2s;
+        // &:hover {
+        //   width: 300px;
+        //   height: 500px;
+        // }
         a {
           color: $color-secondary;
           &:hover {
