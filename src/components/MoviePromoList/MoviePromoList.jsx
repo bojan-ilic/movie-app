@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MoviePromoCard from "../MoviePromoCard/MoviePromoCard";
-// import LogoBlue from "../../assets/images/logo-blue.png";
+import Logo from "../../assets/images/logo.svg";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import {
 //   faChevronRight,
@@ -65,7 +65,7 @@ class MoviePromoList extends React.Component {
       <section className="movie-promo-list">
         <div className="movie-promo-list__title">
           <div className="title-logo">
-            <img src={LogoBlue} alt="Amazon Primer Logo Blue" />
+            <img src={Logo} alt="Logo" />
           </div>
           <div className="title-text">
             <h2>Previews for your</h2>

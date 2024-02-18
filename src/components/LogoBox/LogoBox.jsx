@@ -1,6 +1,6 @@
 import React from "react";
 import "./LogoBox.scss";
-import PrimeVideoLogo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 
 /**
@@ -12,7 +12,7 @@ class LogoBox extends React.Component {
     return (
       <div className="logo-box">
         <Link to={"/"}>
-          <img src={PrimeVideoLogo} alt="Prime Video Logo" />
+          <img src={Logo} alt="Prime Video Logo" />
         </Link>
       </div>
     );
