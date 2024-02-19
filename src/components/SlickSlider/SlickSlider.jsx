@@ -8,39 +8,39 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import ArcaneImage from '../../assets/images/Arcane.jpg';
+import ArgylleImage from "../../assets/images/Argylle.jpg";
+import BreakingBadImage from "../../assets/images/Breaking Bad.jpg";
+import BetterCallSaulleImage from "../../assets/images/Better Call Saul.jpg";
+import KungFuPandaImage from "../../assets/images/Kung Fu Panda 4.jpg"
 
 class SlickSlider extends React.Component {
   render() {
     const sliderData = [
       {
-        title: "The Rig",
+        title: "Argylle",
         link: "",
-        imageURL:
-          "https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_TheRig/d3ec01d7-c8dd-4086-93dd-290612c08f8c._UR3000,600_SX1500_FMwebp_.jpeg",
+        imageURL: ArgylleImage,
       },
       {
-        title: "Hunters",
+        title: "Arcane",
         link: "",
-        imageURL:
-          "https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_HuntersS2/df497117-b8ca-49eb-9987-f6c9b86b54cb._UR3000,600_SX1500_FMwebp_.jpeg",
+        imageURL: ArcaneImage,
       },
       {
-        title: "The Wheel of Time",
+        title: "Breaking Bad",
         link: "",
-        imageURL:
-          "https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_TheWheelOfTime_S1_NoLocaleOnly/e8aa1d89-f135-4b48-b014-fc7222cb4891._UR3000,600_SX1500_FMwebp_.jpeg",
+        imageURL: BreakingBadImage,
       },
       {
-        title: "Reacher",
+        title: "Better Call Saul",
         link: "",
-        imageURL:
-          "https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_Reacher_S1_NoLocaleOnly/af5e691b-85b1-4274-97f3-266958b239f5._UR3000,600_SX1500_FMwebp_.jpeg",
+        imageURL: BetterCallSaulleImage,
       },
       {
-        title: "2 Broke Girls",
+        title: "Kung Fu Panda 4",
         link: "",
-        imageURL:
-          "https://m.media-amazon.com/images/G/01/digital/video/sonata/SVOD_ROW_SH_2BrokeGirls/960b6e25-0731-4d00-bbd1-4eecda8eb8e8._UR3000,600_SX1500_FMwebp_.jpg",
+        imageURL: KungFuPandaImage,
       },
     ];
 

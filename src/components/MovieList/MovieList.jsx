@@ -18,22 +18,20 @@ class MovieList extends React.Component {
     this.state = {
       movieDetails: [],
     };
-
-    // console.log("konzolLogujem", category);
   }
 
   // urls = [
   //   "https://api.themoviedb.org/3/tv/popular?api_key=ed629fe234107c7bb508e5eec8974967",
   //   "https://api.themoviedb.org/3/movie/top_rated?api_key=ed629fe234107c7bb508e5eec8974967",
   //   "https://api.themoviedb.org/3/movie/upcoming?api_key=ed629fe234107c7bb508e5eec8974967",
+
+	// https://api.themoviedb.org/3/tv/on_the_air?api_key=ed629fe234107c7bb508e5eec8974967
   // ];
 
-  // category = this.props.category;
-  //   console.log("konzolLogujem", category);
+
 
   movieCategory = (apiVariable) => {
     const category = this.props.category;
-    // console.log("Kategorije: ", category);
     return `https://api.themoviedb.org/3/${category}?api_key=ed629fe234107c7bb508e5eec8974967`;
   };
 
@@ -41,8 +39,6 @@ class MovieList extends React.Component {
   fetchAPI = () => [
     fetch(this.movieCategory())
       .then((response) => response.json())
-      // .then((data) => console.log("FetchAPI JSON Data", data.results))
-      // .then((data) => console.log("KONZOLA", data.results))
       .then((data) => this.setState({ movieDetails: data.results }))
       .catch((error) => console.log("Error: ", error)),
   ];
@@ -61,11 +57,8 @@ class MovieList extends React.Component {
     };
 
     const movieDetailsComplete = movieDetails.filter(function (el) {
-      // console.log(el);
       return el.backdrop_path != null;
     });
-    // console.log("movieDetailsComplete: ", movieDetailsComplete);
-    // console.log(typeof movieDetailsComplete);
 
     const settings = {
       // dots: true,
@@ -90,7 +83,6 @@ class MovieList extends React.Component {
                 return (
                   <MovieCard
                     key={uuidv4()}
-                    // key={item.uuidv4()}
                     posterURL={posterURL(item.backdrop_path)}
                     alt={item.name}
                     movieTitle={item.name || item.title}
