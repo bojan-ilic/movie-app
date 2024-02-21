@@ -8,7 +8,7 @@ import Logo from "../../assets/images/logo.svg";
 import LandOfBadImage from "../../assets/images/Land of bad.jpg";
 import LordOfTheRingsImage from "../../assets/images/Lord of the rings.jpg";
 import AnEyeForAnEyeImage from "../../assets/images/An Eye For An Ey.jpeg";
-import AnEyeForAnEyeVideo from "../../assets/images/An Eye For An Ey.mp4";
+import AnEyeForAnEyeVideo from "../../assets/videos/An Eye For An Ey.mp4";
 
 class MoviePromoList extends React.Component {
 	render() {

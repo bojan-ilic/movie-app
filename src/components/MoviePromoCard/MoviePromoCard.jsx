@@ -7,7 +7,7 @@ class MoviePromoCard extends React.Component {
 		super(props);
 	}
 
-	// Helper function to determine if the video URL is from YouTube
+	// Helper function to determine if the videos URL is from YouTube
 	isYouTubeVideo(url) {
 		return url.includes("youtube.com") || url.includes("youtu.be");
 	}
@@ -72,7 +72,7 @@ class MoviePromoCard extends React.Component {
 				</div>
 				<div className="promo-video">
 					{this.isYouTubeVideo(promoVideo) ? (
-						// Render YouTube video in an iframe
+						// Render YouTube videos in an iframe
 						<iframe
 							width="100%"
 							height="100%"
@@ -81,7 +81,7 @@ class MoviePromoCard extends React.Component {
 							allowFullScreen>
 						</iframe>
 					) : (
-						// Render MP4 video in a video tag
+						// Render MP4 videos in a videos tag
 						<video poster={promoPoster} controls>
 							<source src={promoVideo} type="video/mp4"/>
 						</video>
