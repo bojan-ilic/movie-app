@@ -10,11 +10,12 @@ $color-button-secondary: #425265; // gray
 
 // Font Variables
 @font-face {
-  font-family: AmazonEmber;
-  src: url(../assets/fonts/Amazon-Ember-Medium.ttf);
+	font-family: "Amble-Regular";
+	src: url(../assets/fonts/Amble-Regular.ttf);
 }
+
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-$font-primary: "AmazonEmber", "PT Sans", Arial, sans-serif; // Google Font
+$font-primary: "Amble-Regular", "PT Sans", Arial, sans-serif;
 
 // Portrait phones
 $breakpoint-x-small: 360px;

@@ -7,6 +7,8 @@ import MoviePromoCard from "../MoviePromoCard/MoviePromoCard";
 import Logo from "../../assets/images/logo.svg";
 import LandOfBadImage from "../../assets/images/Land of bad.jpg";
 import LordOfTheRingsImage from "../../assets/images/Lord of the rings.jpg";
+import AnEyeForAnEyeImage from "../../assets/images/An Eye For An Ey.jpeg";
+import AnEyeForAnEyeVideo from "../../assets/images/An Eye For An Ey.mp4";
 
 class MoviePromoList extends React.Component {
 	render() {
@@ -19,20 +21,18 @@ class MoviePromoList extends React.Component {
 				recommendedYears: "12+"
 			},
 			{
+				title: "An Eye For An Eye",
+				videoPoster: AnEyeForAnEyeImage,
+				video: AnEyeForAnEyeVideo,
+				category: "Drama",
+				recommendedYears: "16+"
+			},
+			{
 				title: "Land of Bad",
 				videoPoster: LandOfBadImage,
 				video: "https://www.youtube.com/embed/u3QMjSoi2dA?si=LGIWPX-mzii8gHXN&amp;controls=0",
 				category: "	Action",
 				recommendedYears: "13+"
-			},
-			{
-				title: "An Eye For An Eye",
-				videoPoster:
-					"https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/770bd067bf78fedda1a69766c52b8db035a4ead3a460b1c91108247c8bcad79f._RI_V_TTW_UX667_UY375_.png",
-				video:
-					"https://s3-dub-2.cf.trailer.row.aiv-cdn.net/0dff/68a0/7020/40e4-af39-060548c343ae/41da9ed3-706a-4f99-9037-3de2fb880620_video_6000_audio_aaclc_128.mp4",
-				category: "Drama",
-				recommendedYears: "16+"
 			}
 		];
 
