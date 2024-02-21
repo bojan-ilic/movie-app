@@ -1,7 +1,7 @@
 import React from "react";
 import "./MovieCard.scss";
 import MovieInfo from "../MovieInfo/MovieInfo";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 /**
  * MovieCard component is a presentational component that displays a movie poster and its information.
@@ -21,21 +21,18 @@ import { Link } from "react-router-dom";
  */
 
 class MovieCard extends React.Component {
-  render() {
-    const title = this.props.title;
-    const posterURL = this.props.posterURL;
-    const alt = this.props.alt;
-    const movieTitle = this.props.movieTitle;
+	render() {
+		const {posterURL, alt, movieTitle} = this.props;
 
-    return (
-      <div className="movie-card">
-        <Link to={"/"}>
-          <img src={posterURL} alt={movieTitle} />
-        </Link>
-        <MovieInfo movieTitle={movieTitle} posterURL={posterURL} alt={alt} />
-      </div>
-    );
-  }
+		return (
+			<div className="movie-card">
+				<Link to={"/"}>
+					<img src={posterURL} alt={movieTitle}/>
+				</Link>
+				<MovieInfo movieTitle={movieTitle} posterURL={posterURL} alt={alt}/>
+			</div>
+		);
+	}
 }
 
 export default MovieCard;

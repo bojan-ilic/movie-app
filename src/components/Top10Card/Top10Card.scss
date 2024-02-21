@@ -1,91 +1,129 @@
 @import "../../styles/_variables.scss";
 
 .top-10-list-wrapper {
-  .top-10-card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    .info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-basis: 50%;
-      h2 {
-        color: $color-primary;
-        font-size: 3rem;
-      }
-      .movie-details {
-        h3 {
-          &.movie-title {
-            color: $color-primary;
-            font-size: 3.2rem;
-          }
-        }
-        .movie-category {
-          margin: 1rem 0 2.6rem;
-          span {
-            display: inline-flex;
-            font-size: 1.7rem;
-            color: $color-primary;
-            &.year {
-              margin-left: 1rem;
-              color: $color-tertiary;
-              font-weight: 700;
-              border: 1px solid rgba(129, 151, 164, 0.7);
-              border-radius: 0.2rem;
-              padding: 0 0.4rem;
-              line-height: 1.2;
-            }
-          }
-        }
-        .buttons-wrapper {
-          display: flex;
-          .play {
-            display: flex;
-            align-items: center;
-            background-color: $color-button;
-            color: $color-primary;
-            font-size: 1.7rem;
-            line-height: 2rem;
-            padding: 1.4rem 2rem;
-            border-radius: 10rem;
-            &:hover {
-              background-color: $color-button-hover;
-            }
-            svg {
-              margin-right: 1.2rem;
-            }
-          }
-          .add-movie,
-          .movie-info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $color-button-secondary;
-            border-radius: 50%;
-            border: 0;
-            height: 4.8rem;
-            width: 4.8rem;
-            opacity: 0.8;
-            &:hover {
-              opacity: 1;
-            }
-            svg {
-              color: #f2f4f6;
-            }
-          }
-          .add-movie {
-            margin: 0 0.8rem;
-          }
-        }
-      }
-    }
-    .promo {
-      flex-basis: 50%;
-      background: linear-gradient(90deg, #0f171e 0, rgba(15, 23, 30, 0) 50%);
-      img {
-        position: relative;
-        z-index: -1;
-      }
-    }
-  }
+	.top-10-card-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			flex-basis: 50%;
+
+			h2 {
+				color: $color-primary;
+				font-size: 3rem;
+
+				@media (max-width: $breakpoint-medium) {
+					font-size: 1.6rem;
+				}
+			}
+
+			.movie-details {
+				h3 {
+					&.movie-title {
+						color: $color-primary;
+						font-size: 3.2rem;
+
+						@media (max-width: $breakpoint-medium) {
+							font-size: 1.5rem;
+						}
+					}
+				}
+
+				.movie-category {
+					margin: 1rem 0 2.6rem;
+
+					span {
+						display: inline-flex;
+						font-size: 1.7rem;
+						color: $color-primary;
+
+						&.year {
+							margin-left: 1rem;
+							color: $color-tertiary;
+							font-weight: 700;
+							border: 1px solid rgba(129, 151, 164, 0.7);
+							border-radius: 0.2rem;
+							padding: 0 0.4rem;
+							line-height: 1.2;
+						}
+
+						@media (max-width: $breakpoint-medium) {
+							font-size: 1.3rem;
+						}
+					}
+				}
+
+				.promo-mobile {
+					@media (max-width: $breakpoint-medium) {
+						display: block
+					}
+				}
+
+				.buttons-wrapper {
+					display: flex;
+
+					.play {
+						display: flex;
+						align-items: center;
+						background-color: $color-button;
+						color: $color-primary;
+						font-size: 1.7rem;
+						line-height: 2rem;
+						padding: 1.4rem 2rem;
+						border-radius: 10rem;
+
+						&:hover {
+							background-color: $color-button-hover;
+						}
+
+						svg {
+							margin-right: 1.2rem;
+						}
+					}
+
+					.add-movie,
+					.movie-info {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background-color: $color-button-secondary;
+						border-radius: 50%;
+						border: 0;
+						height: 4.8rem;
+						width: 4.8rem;
+						opacity: 0.8;
+
+						&:hover {
+							opacity: 1;
+						}
+
+						svg {
+							color: #f2f4f6;
+						}
+					}
+
+					.add-movie {
+						margin: 0 0.8rem;
+					}
+				}
+			}
+		}
+
+		.promo {
+			flex-basis: 50%;
+			background: linear-gradient(90deg, #0f171e 0, rgba(15, 23, 30, 0) 50%);
+
+			@media (max-width: $breakpoint-medium) {
+				display: none;
+			}
+
+			img {
+				position: relative;
+				z-index: -1;
+			}
+		}
+	}
 }

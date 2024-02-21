@@ -1,15 +1,21 @@
+@import "../../styles/_variables.scss";
+
 .header {
-  display: flex;
-  flex-direction: row;
-  padding: 1.5rem 5rem;
-  background-color: #0f171e;
-  background-image: linear-gradient(
-    rgb(27, 37, 48) 0px,
-    rgba(27, 37, 48, 0.85)
-  );
-  background-repeat: repeat-x;
+	display: flex;
+	flex-direction: row;
+	padding: 1.5rem 5rem;
+	background-color: #0f171e;
+	background-image: linear-gradient(
+			rgb(27, 37, 48) 0px,
+			rgba(27, 37, 48, 0.85)
+	);
+	background-repeat: repeat-x;
+
+	@media (max-width: $breakpoint-medium) {
+		justify-content: space-between;
+	}
 }
 
 .main-menu-active-link {
-  color: red;
+	color: red;
 }
