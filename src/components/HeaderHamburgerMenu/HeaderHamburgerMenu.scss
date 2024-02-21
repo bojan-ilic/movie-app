@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.header {
+	&__hamburger-menu-icon {
+		display: none;
+		color: $color-primary;
+
+		@media (max-width: $breakpoint-medium) {
+			display: block
+		}
+	}
+}
