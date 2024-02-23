@@ -11,12 +11,20 @@
 
 		&.slick-prev {
 			left: 2.5rem;
+
+			@media (max-width: $breakpoint-medium) {
+				left: 1rem;
+			}
 		}
 
 		&.slick-next {
 			z-index: 8888;
 			right: 2.5rem;
 			color: $color-primary-dark;
+
+			@media (max-width: $breakpoint-medium) {
+				right: 1rem;
+			}
 		}
 	}
 

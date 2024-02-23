@@ -54,15 +54,43 @@ class MovieList extends React.Component {
 			speed: 500,
 			slidesToShow: 6,
 			slidesToScroll: 6,
+			centerMode: false,
 			nextArrow: <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>,
 			prevArrow: <FontAwesomeIcon icon={faChevronLeft}></FontAwesomeIcon>,
 			responsive: [
 				{
-					breakpoint: 360, // $breakpoint-x-small value
+					breakpoint: 690,
 					settings: {
 						slidesToShow: 1,
-						slidesToScroll: 1,
-						centerMode: false
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 1260,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
+					}
+				},
+				{
+					breakpoint: 1560,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 4
+					}
+				},
+				{
+					breakpoint: 1680,
+					settings: {
+						slidesToShow: 5,
+						slidesToScroll: 5
 					}
 				}
 			]

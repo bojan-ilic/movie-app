@@ -11,11 +11,8 @@
 	);
 	background-repeat: repeat-x;
 
-	@media (max-width: $breakpoint-medium) {
+	@media (max-width: $breakpoint-large) {
 		justify-content: space-between;
 	}
 }
 
-.main-menu-active-link {
-	color: red;
-}

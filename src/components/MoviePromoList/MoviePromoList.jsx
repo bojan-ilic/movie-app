@@ -36,26 +36,15 @@ class MoviePromoList extends React.Component {
 			}
 		];
 
-		// VRATI OVAJ SETTINGS NAKON STO ZAVRSIS SA IZMENOM STILA SLIDERA
-		// const settings = {
-		// 	dots: true,
-		// 	infinite: true,
-		// 	autoplay: true,
-		// 	speed: 5000,
-		// 	autoplaySpeed: 5000,
-		// 	slidesToShow: 1,
-		// 	slidesToScroll: 1
-		// };
-
 		const settings = {
-			infinite: false,
-			autoplay: false,
-			speed: 0,
-			autoplaySpeed: 0,
+			dots: true,
+			infinite: true,
+			autoplay: true,
+			speed: 5000,
+			autoplaySpeed: 5000,
 			slidesToShow: 1,
 			slidesToScroll: 1
 		};
-
 
 		return (
 			<section className="movie-promo-list">

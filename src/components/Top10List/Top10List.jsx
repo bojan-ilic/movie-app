@@ -127,15 +127,29 @@ export class Top10List extends Component {
 			swipeToSlide: true,
 			focusOnSelect: true,
 			infinite: false,
+			centerMode: false,
 			nextArrow: <FontAwesomeIcon icon={faChevronRight}/>,
 			prevArrow: <FontAwesomeIcon icon={faChevronLeft}/>,
 			responsive: [
 				{
-					breakpoint: 360, // $breakpoint-x-small value
+					breakpoint: 950,
 					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1,
-						centerMode: false
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 1260,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 1690,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1
 					}
 				}
 			]

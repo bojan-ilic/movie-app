@@ -20,7 +20,7 @@
 	&__nav-bar {
 		width: 100%;
 
-		@media (max-width: $breakpoint-medium) {
+		@media (max-width: $breakpoint-large) {
 			display: none;
 		}
 
@@ -34,6 +34,10 @@
 			li {
 				margin-right: 1rem;
 				font-size: 1.5rem;
+
+				@media (max-width: $breakpoint-small) {
+					margin-right: 0
+				}
 
 				a {
 					color: $color-primary-dark;

@@ -1,51 +1,67 @@
 @import "../../styles/variables.scss";
 
 .movie-list {
-  margin: 4rem 0;
-  &__headline {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0.8rem;
-    h2 {
-      font-size: 1.9rem;
-      color: $color-primary;
-    }
-    a {
-      display: flex;
-      align-items: center;
-      color: $color-secondary;
-      font-size: 1.3rem;
-      margin-left: 0.8rem;
-      &:hover {
-        color: $color-secondary-light;
-      }
-    }
-  }
-  &__wrapper {
-    svg {
-      color: $color-primary-dark;
-      z-index: 8888;
-      width: 4rem;
-      height: 4rem;
-      &.slick-prev {
-        left: 2.5rem;
-      }
-      &.slick-next {
-        z-index: 8888;
-        right: 2.5rem;
-        color: $color-primary-dark;
-      }
-    }
-    ul {
-      &.slick-dots {
-        li {
-          button {
-            &::before {
-              opacity: 0;
-            }
-          }
-        }
-      }
-    }
-  }
+	margin: 4rem 0;
+
+	&__headline {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 0.8rem;
+
+		h2 {
+			font-size: 1.9rem;
+			color: $color-primary;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			color: $color-secondary;
+			font-size: 1.3rem;
+			margin-left: 0.8rem;
+
+			&:hover {
+				color: $color-secondary-light;
+			}
+		}
+	}
+
+	&__wrapper {
+		svg {
+			color: $color-primary-dark;
+			z-index: 8888;
+			width: 4rem;
+			height: 4rem;
+
+			&.slick-prev {
+				left: 2.5rem;
+
+				@media (max-width: $breakpoint-medium) {
+					left: 1rem;
+				}
+			}
+
+			&.slick-next {
+				z-index: 8888;
+				right: 2.5rem;
+				color: $color-primary-dark;
+
+				@media (max-width: $breakpoint-medium) {
+					right: 1rem;
+				}
+			}
+		}
+
+		ul {
+			&.slick-dots {
+				li {
+					button {
+						&::before {
+							opacity: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }

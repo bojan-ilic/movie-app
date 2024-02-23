@@ -11,12 +11,16 @@
 			justify-content: space-between;
 			flex-basis: 50%;
 
+			@media (max-width: $breakpoint-medium) {
+				flex-basis: unset;
+			}
+
 			h2 {
 				color: $color-primary;
 				font-size: 3rem;
 
 				@media (max-width: $breakpoint-medium) {
-					font-size: 1.6rem;
+					font-size: 1.9rem;
 				}
 			}
 
@@ -28,12 +32,18 @@
 
 						@media (max-width: $breakpoint-medium) {
 							font-size: 1.5rem;
+							margin-top: 1rem;
 						}
 					}
 				}
 
 				.movie-category {
 					margin: 1rem 0 2.6rem;
+
+					@media (max-width: $breakpoint-medium) {
+						margin-bottom: 1rem;
+						margin-top: 0;
+					}
 
 					span {
 						display: inline-flex;
@@ -57,13 +67,24 @@
 				}
 
 				.promo-mobile {
+					display: none;
 					@media (max-width: $breakpoint-medium) {
-						display: block
+						display: block;
 					}
 				}
 
 				.buttons-wrapper {
 					display: flex;
+
+					@media (max-width: $breakpoint-medium) {
+						justify-content: flex-start;
+						margin-top: 1.2rem;
+					}
+
+					@media (max-width: $breakpoint-small) {
+						justify-content: space-between;
+						margin-top: 1.2rem;
+					}
 
 					.play {
 						display: flex;
@@ -75,12 +96,29 @@
 						padding: 1.4rem 2rem;
 						border-radius: 10rem;
 
+						@media (max-width: $breakpoint-medium) {
+							font-size: 1.4rem;
+							padding: 1rem 1.4rem;
+						}
+
 						&:hover {
 							background-color: $color-button-hover;
 						}
 
 						svg {
 							margin-right: 1.2rem;
+
+							@media (max-width: $breakpoint-medium) {
+								margin-right: 1rem;
+							}
+
+							&.play-icon {
+								@media (max-width: $breakpoint-medium) {
+									width: 100%;
+									height: auto;
+									max-width: 1.5rem;
+								}
+							}
 						}
 					}
 

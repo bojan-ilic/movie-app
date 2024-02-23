@@ -3,10 +3,65 @@
 .header {
 	&__hamburger-menu-icon {
 		display: none;
-		color: $color-primary;
 
-		@media (max-width: $breakpoint-medium) {
-			display: block
+		@media (max-width: $breakpoint-large) {
+			display: block;
+		}
+
+		.hamburger-icon {
+			color: $color-primary;
+			background: none;
+			border: none;
+			padding: 0;
+			margin: 0;
+			cursor: pointer;
+		}
+
+		.mobile-menu {
+			display: flex;
+			flex-direction: column;
+			background-color: $color-background;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			z-index: 10;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+			.header__nav-bar {
+				display: flex;
+				flex-direction: column;
+
+				ul {
+					width: 100%;
+					padding: 0;
+					margin: 0;
+					list-style: none;
+					flex-direction: column;
+
+					li {
+						padding: 1rem 1.5rem;
+
+						&.dropdown {
+							height: auto;
+						}
+					}
+				}
+			}
+
+			.header__search-bar {
+				display: flex;
+				padding: 15px;
+			}
+
+			.header__account {
+				padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+			}
 		}
 	}
 }
+

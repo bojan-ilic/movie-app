@@ -25,7 +25,8 @@ export class Top10Card extends Component {
 						</div>
 						<div className="buttons-wrapper">
 							<Link className="play">
-								<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+								<svg class="play-icon" width="24" height="24" viewBox="0 0 24 24"
+									 xmlns="http://www.w3.org/2000/svg">
 									<title>Play Arrow</title>
 									<path
 										d="M4.576 2.452C3.71 1.953 3 2.364 3 3.364v17.272c0 1 .71 1.41 1.576.912l15.03-8.642c.867-.498.867-1.314 0-1.812L4.576 2.452z"
