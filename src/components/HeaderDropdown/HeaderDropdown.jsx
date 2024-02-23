@@ -18,16 +18,25 @@ import "./HeaderDropdown.scss";
 export class HeaderDropdown extends Component {
 	constructor(props) {
 		super(props);
+		this.state = {isOpen: false};
 	}
+
+	toggleDropdown = () => {
+		this.setState(prevState => ({
+			isOpen: !prevState.isOpen
+		}), () => {
+			document.body.classList.toggle('no-scroll', this.state.isOpen);
+		});
+	};
 
 	render() {
 		const label = this.props.label;
 
 		return (
-			<li className="dropdown">
+			<li className="dropdown" onClick={this.toggleDropdown}>
 				{label}
 				<FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
-				<ul className="dropdown-menu-wrapper">
+				<ul className={`dropdown-menu-wrapper ${this.state.isOpen ? 'open' : ''}`}>
 					<li className="top-categories">
 						<h3>Top categories</h3>
 						<div className="top-categories__wrapper">
